@@ -1,0 +1,26 @@
+# first.ucisc
+# This is a very, very simple uCISC program that loads the number 42 onto the
+# stack. Due to immediate value limitations for loading directly to memory
+# locations, we need to load this value through a register.
+#
+# This code should result in a program with 3 instructions that should output
+# something like the following:
+#   Running program with 3 words
+#   INFO: HALT: 2 instructions in 2.018e-05s
+#   INFO: Stack: FFFF => 0x002A 
+#   Done.
+#
+# At the end, the stack points to memory address 0xFFFF with the hex value
+# 0x002A which is the equivalent of 42 decimal.
+
+
+# Declare a variable reference to the stack
+# This is purely syntax sugar so that we can refer to 1.mem as $stack everywhere
+$stack as 1.mem
+
+# Let's load 42 onto the stack (via register 3)
+copy 42.imm 3.reg
+copy 3.reg $stack push
+
+# This is a special halt condition to stop execution
+copy 0.reg 0.reg

@@ -14,7 +14,7 @@ Quick links to sections of this document:
 
 ## Quickstart
 
-### 1. Install the uCISC gem
+#### 1. Install the uCISC gem
 
 If you are already familiar with Ruby, you can quickly get uCISC running via the
 uCISC gem:
@@ -23,7 +23,7 @@ uCISC gem:
 gem install ucisc
 ```
 
-### 2. Write some code
+#### 2. Write some code
 
 Open a file using your favorite text editor and add the following code to it.
 This code is also available in the examples folder
@@ -44,7 +44,7 @@ copy 3.reg $stack push
 copy 0.reg 0.reg
 ```
 
-### 3. Run some code
+#### 3. Run some code
 
 You can now run ucisc code using the `ucisc` command.
 
@@ -77,7 +77,7 @@ suggest using RVM to install specific versions of Ruby. If you install the same
 version of Ruby that is used in these tutorials, your results will be the most
 predictable.
 
-### 1. Install RVM
+#### 1. Install RVM
 
 Open a terminal window to run the commands below. On Ubuntu, open "Activities"
 and search for "Terminal". Other linux distributions may vary, but the terminal
@@ -93,7 +93,7 @@ gpg --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D695
 curl -sSL https://get.rvm.io | bash -s stable
 ```
 
-### 2. Install Ruby 2.7.1
+#### 2. Install Ruby 2.7.1
 
 uCISC is tested on Ruby 2.7.1, so we will install it now.
 
@@ -103,7 +103,7 @@ rvm install 2.7.1
 rvm --default use 2.7.1
 ```
 
-### 3. uCISC Quickstart
+#### 3. uCISC Quickstart
 
 For the remaining steps, follow the [uCISC Quickstart](#Quickstart) at the top
 of this document.
@@ -114,7 +114,7 @@ MacOS ships with ruby already installed. However, I suggest using RVM to install
 specific versions of Ruby. If you install the same version of Ruby that is used
 in these tutorials, your results will be the most predictable.
 
-### 1. Install RVM
+#### 1. Install RVM
 
 Open the terminal application. You can do this by opening Launchpad or Siri and
 searching for "Terminal".
@@ -129,7 +129,7 @@ gpg --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys 409B6B1796C275462
 curl -sSL https://get.rvm.io | bash -s stable
 ```
 
-### 2. Install Ruby 2.7.1
+#### 2. Install Ruby 2.7.1
 
 uCISC is tested on Ruby 2.7.1, so we will install it now.
 
@@ -139,7 +139,7 @@ rvm install 2.7.1
 rvm --default use 2.7.1
 ```
 
-### 3. uCISC Quickstart
+#### 3. uCISC Quickstart
 
 For the remaining steps, follow the [uCISC Quickstart](#Quickstart) at the top
 of this document.
@@ -151,7 +151,7 @@ designed for Unix based systems like Linux and MacOS). However, windows is
 still supported, there are just a few extra hoops to jump through. I've put
 together a guide to get it running as predictably as possible for this project.
 
-### 1. Install Ruby
+#### 1. Install Ruby
 
 The amazing people over at [RubyInstaller.org](https://rubyinstaller.org/) have
 put together a simple installer for getting Ruby up and running on windows. Head
@@ -163,7 +163,7 @@ Once you have downloaded the installer. Run it and use all the default options.
 When the installer launches the command line installer component, press "enter"
 to accept the defaults.
 
-### 2. uCISC Quickstart
+#### 2. uCISC Quickstart
 
 For the remaining steps, follow the [uCISC Quickstart](#Quickstart) at the top
 of this document. Important note: To open a command line to run the commands in

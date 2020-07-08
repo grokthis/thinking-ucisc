@@ -5,6 +5,9 @@ so we can learn to program our homebrew computers. If you are familar with the
 Ruby programming language, you can use the quickstart section. Otherwise, find
 the section with your operating system below to get your system ready.
 
+If you prefer, I walk through this setup in a
+[quickstart video](https://youtu.be/5GKWFKLbwDM) on YouTube.
+
 Quick links to sections of this document:
 
 * [Quickstart](#Quickstart)
@@ -135,6 +138,8 @@ uCISC is tested on Ruby 2.7.1, so we will install it now.
 
 ```
 rvm install 2.7.1
+
+# You may need to restart your terminal here
 
 rvm --default use 2.7.1
 ```

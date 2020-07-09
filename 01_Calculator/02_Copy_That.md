@@ -145,7 +145,7 @@ In other words, `9 + 1 = 10`. With base 2 you just run out of digits sooner:
 Some examples of numbers and their binary equivalent:
 
 | Base 10 | Base 2 (Binary) | Base 16 (Hex) |
-|+------- |+--------------- |+------------- |
+| ------- | --------------- | ------------- |
 | 0       | 0               | 0             |
 | 1       | 1               | 1             |
 | 2       | 10              | 2             |

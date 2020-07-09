@@ -1,0 +1,66 @@
+# Compute That Example
+# 
+# From the challenge:
+# 1. Load 0xFFFB into register 1
+# 2. Solve the following 5 math problems and put the answer in the specified
+#    result memory address.
+#   * 54 + 62 = ?; store in 0xFFFB
+#   * 54 * 36 = ?; store in 0xFFFC
+#   * 24 / 12 = ?; store in 0xFFFD
+#   * 22 - 12 = ?; store in 0xFFFE
+#   * 12 / 5 = ?; store in 0xFFFF
+# 
+# For this particular implementation, the output should be:
+#  Running program with 27 words
+#  INFO: HALT: 26 instructions in 4.1621e-05s
+#  INFO: Stack: FFFB => 0x0074 0x0798 0x0002 0x000A 0x0002 
+#  Done.
+#
+# 1. Load 0xFFFB into register 1
+#
+# Let's initialize the stack a bit differently. If we copy -5 into 1.reg, we
+# will get 0xFFFB. This is because the 16-bit representation for -5 is 0xFFFB
+# because of how computers represent negative values.
+copy -5.imm 1.reg
+
+# 2. Solve the following 5 math problems
+#   54 + 62 = ?; store in 0xFFFB
+copy 54.imm 2.reg
+copy 62.imm 3.reg
+compute 0xA.op 2.reg 3.reg
+copy 3.reg 1.mem # Copy to 0xFFFB
+
+#   54 * 36 = ?; store in 0xFFFC
+compute 0xA.op 1.imm 1.reg # register 1 is now 0xFFFC
+copy 54.imm 2.reg
+copy 36.imm 3.reg
+compute 0xC.op 2.reg 3.reg
+copy 3.reg 1.mem # Copy to 0xFFFB
+
+#   24 / 12 = ?; store in 0xFFFD
+compute 0xA.op 1.imm 1.reg # register 1 is now 0xFFFD
+copy 12.imm 2.reg
+copy 24.imm 3.reg
+compute 0xD.op 2.reg 3.reg
+copy 3.reg 1.mem # Copy to 0xFFFD
+
+#   22 - 12 = ?; store in 0xFFFE
+compute 0xA.op 1.imm 1.reg # register 1 is now 0xFFFE
+copy 12.imm 2.reg
+copy 22.imm 3.reg
+compute 0xB.op 2.reg 3.reg
+copy 3.reg 1.mem # Copy to 0xFFFE
+
+#   12 / 5 = ?; store in 0xFFFF
+compute 0xA.op 1.imm 1.reg # register 1 is now 0xFFFF
+copy 5.imm 2.reg
+copy 12.imm 3.reg
+compute 0xD.op 2.reg 3.reg
+copy 3.reg 1.mem # Copy to 0xFFFF
+
+# Bonus: add the remainder to the stack
+copy -6.imm 1.reg
+compute 0xF.op 0.imm 1.mem
+
+# Halt
+copy 0.reg 0.reg

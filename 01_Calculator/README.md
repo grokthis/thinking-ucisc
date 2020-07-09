@@ -8,7 +8,7 @@ Learn Micro-CISC:
 
 1. [Setting up your uCISC environment](01_Setting_Up.md)
 2. [Copy That](02_Copy_That.md)
-3. [Compute That](03_Compute_That.md) - Coming Soon
+3. [Compute That](03_Compute_That.md)
 4. [Do That](04_Do_That.md) - Coming Soon
 5. [Remember That](05_Remember_That.md) - Coming Soon
 

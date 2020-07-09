@@ -1,0 +1,37 @@
+# Copy That Example
+# 
+# From the challenge:
+# 1. Load 0xFFFF into register 1
+# 2. Load 0x0000 into register 2
+# 3. Copy the contents of memory address 0x0000 to memory address 0xFFFF
+#
+# For this particular implementation, the output should be:
+#   Running program with 6 words
+#   INFO: HALT: 4 instructions in 1.427e-05s
+#   INFO: Stack: FFFF => 0x7605 
+#   Done.
+#
+# 1. Load 0xFFFF into register 1
+# 
+# Step 1 is the trickiest for this example. 0xFFFF is to large a value to have
+# in an immediate, so we need to store it at a known memory location instead
+# and load it indirectly. In this case, we just put it at the end of our
+# program. There is 1 memory address per instruction so we can count the
+# instructions to determine the address of the 0xFFFF value.
+copy 5.imm 1.reg # memory address 0x0000
+
+# Register 1 has the 0x0005 address we want now, so load the 0xFFFF memory
+# address from there and store it in the register. After that, 1.reg will have
+# the 0xFFFF address.
+copy 1.mem 1.reg # memory address 0x0001
+
+# 2. Copy 0 into register 2
+copy 0.imm 2.reg # memory address 0x0002
+
+# 3. Copy the contents of address 0x0000 to address 0xFFFF
+copy 2.mem 1.mem # memory address 0x0003
+
+# Special halt condition
+copy 0.reg 0.reg # memory address 0x0004
+
+% FFFF # memory address 0x0005

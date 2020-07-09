@@ -4,12 +4,17 @@ The calculator tutorial is designed to introduce you to the basics of uCISC and
 how to build basic programs with it. It is recommended to go through these
 chapters in order.
 
-Chapters:
+Learn Micro-CISC:
 
 1. [Setting up your uCISC environment](01_Setting_Up.md)
-2. [Writing a Simple Adder](02_A_Simple_Adder.md) - Coming Soon
-3. [Introducing Hexadecimal](03_Introducing_Hexadecimal.md) - Coming Soon
-4. [Registers as Pointers](04_Registers_as_Pointers.md) - Coming Soon
-5. [A More Advanced Calculator](05_A_More_Advanced_Calculator.md) - Coming Soon
-6. [16-Bit Limitations](16_Bit_Limitations.md) - Coming Soon
+2. [Copy That](02_Copy_That.md)
+3. [Compute That](03_Compute_That.md) - Coming Soon
+4. [Do That](04_Do_That.md) - Coming Soon
+5. [Remember That](05_Remember_That.md) - Coming Soon
+
+Write a Calculator:
+
+6. [Let's Add Stuff](06_Add_Stuff.md) - Coming Soon
+7. [Overflowing Numbers!](07_Overflowing_Numbers.md) - Coming Soon
+8. [A More Advanced Calculator](08_Advanced_Calculator.md) - Coming Soon
 

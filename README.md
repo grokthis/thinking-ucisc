@@ -16,17 +16,17 @@ includes instructions on getting everything installed and how the basics work.
 
 Learn Micro-CISC:
 
-1. [Setting up your uCISC environment](01_Setting_Up.md)
-2. [Copy That](02_Copy_That.md)
-3. [Compute That](03_Compute_That.md) - Coming Soon
-4. [Do That](04_Do_That.md) - Coming Soon
-5. [Remember That](05_Remember_That.md) - Coming Soon
+1. [Setting up your uCISC environment](01_Calculator/01_Setting_Up.md)
+2. [Copy That](01_Calculator/02_Copy_That.md)
+3. [Compute That](01_Calculator/03_Compute_That.md) - Coming Soon
+4. [Do That](01_Calculator/04_Do_That.md) - Coming Soon
+5. [Remember That](01_Calculator/05_Remember_That.md) - Coming Soon
 
 Write a Calculator:
 
-6. [Let's Add Stuff](06_Add_Stuff.md) - Coming Soon
-7. [Overflowing Numbers!](07_Overflowing_Numbers.md) - Coming Soon
-8. [A More Advanced Calculator](08_Advanced_Calculator.md) - Coming Soon
+6. [Let's Add Stuff](01_Calculator/06_Add_Stuff.md) - Coming Soon
+7. [Overflowing Numbers!](01_Calculator/07_Overflowing_Numbers.md) - Coming Soon
+8. [A More Advanced Calculator](01_Calculator/08_Advanced_Calculator.md) - Coming Soon
 
 ## Contributing
 
